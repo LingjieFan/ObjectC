@@ -1,5 +1,6 @@
 # ObjectC
 
+![pureC](https://img.shields.io/github/languages/top/LingjieFan/ObjectC)
 [![license](https://img.shields.io/github/license/LingjieFan/ObjectC)](https://github.com/LingjieFan/ObjectC/blob/main/LICENSE)
 [![tag](https://img.shields.io/github/v/tag/LingjieFan/ObjectC)](https://github.com/LingjieFan/ObjectC/releases/tag)
 
