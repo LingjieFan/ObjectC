@@ -12,7 +12,7 @@ Key features for object-oriented programming (OOP) are included:
 * Supporting single-inheritance class-based object-oriented model.
 * Supporting multiple inheritance of interfaces.
 
-More repositories is built on ObjectC with object-oriented features but pure C syntax.
+More repositories are built on ObjectC with object-oriented features but pure C syntax.
 
 ## Installation
 
