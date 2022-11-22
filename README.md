@@ -12,9 +12,35 @@ More repositories is built on ObjectC with object-oriented features but pure C s
 
 ### Dependencies
 
+* C compiler (gcc is used in the following examples)
+
 ### Linux
 
+```cmd
+gcc -c -fPIC Basic.c -o Basic.o
+gcc -c -fPIC Class.c -o Class.o
+gcc -c -fPIC IObject.c -o IObject.o
+gcc -c -fPIC Object.c -o Object.o
+gcc -c -fPIC IUnitTest.c -o IUnitTest.o
+gcc -shared -fPIC Basic.o Class.o IObject.o Object.o IUnitTest.o -o ObjectC.os
+```
+
 ### Windows
+
+MinGW_32 or MinGW_64 is required for compiling the source codes. Once gcc is available, you can use following instruction on cmd to compile ObjectC.
+
+```cmd
+gcc -c -fPIC Basic.c -o Basic.o
+gcc -c -fPIC Class.c -o Class.o
+gcc -c -fPIC IObject.c -o IObject.o
+gcc -c -fPIC Object.c -o Object.o
+gcc -c -fPIC IUnitTest.c -o IUnitTest.o
+gcc -shared -fPIC Basic.o Class.o IObject.o Object.o IUnitTest.o -o ObjectC.dll
+```
+
+Binary dynamic library files can be found [in the release](https://github.com/LingjieFan/ObjectC/releases/tag/v1.0.0).
+
+MSCV is not recommended, since some C synatxes in C99, such as double complex is not supported by MSCV. 
 
 ## Documentation
 
