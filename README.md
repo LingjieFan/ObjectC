@@ -46,7 +46,7 @@ gcc -shared -fPIC Basic.o Class.o IObject.o Object.o IUnitTest.o -o ObjectC.dll
 
 Binary dynamic library files can be found [in the release](https://github.com/LingjieFan/ObjectC/releases/tag/v1.0.0).
 
-MSCV is not recommended, since some C synatxes in C99, such as double complex, are not supported by MSCV. 
+MSCV is not recommended, since some C synatxes in C99, such as **double complex**, are not supported by MSCV. 
 
 ## Documentation
 
