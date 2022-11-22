@@ -27,7 +27,7 @@ gcc -shared -fPIC Basic.o Class.o IObject.o Object.o IUnitTest.o -o ObjectC.os
 
 ### Windows
 
-MinGW_32 or MinGW_64 is required for compiling the source codes. Once gcc is available, you can use following instruction on cmd to compile ObjectC.
+MinGW_32 or MinGW_64 is required for compiling the source codes. Once gcc is available, you can use following instructions in cmd to compile ObjectC.
 
 ```cmd
 gcc -c -fPIC Basic.c -o Basic.o
