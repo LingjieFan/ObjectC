@@ -1,6 +1,6 @@
 # ObjectC
 
-![license](https://img.shields.io/github/license/LingjieFan/ObjectC)
+[![license](https://img.shields.io/github/license/LingjieFan/ObjectC)](https://github.com/LingjieFan/ObjectC/blob/main/LICENSE)
 
 ObjectC is a C library for object-oriented programming (OOP) features without any new features. Add OOP features to C! No macro definition! No new syntax! Only C.
 
