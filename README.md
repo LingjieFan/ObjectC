@@ -15,6 +15,10 @@ Key features for object-oriented programming (OOP) are included:
 
 * Supporting single-inheritance class-based object-oriented model.
 * Supporting multiple inheritance of interfaces.
+* Supporting function InstanceOf() to determine whether the object is the stance of a class.
+* Binding each class with a unique address, such as the root of all class is 'NULL' 0x00000000
+* the attributes of a class is private, can only be accessed with getter/setter.
+* Most important, ** No addition define macro, all syntax is pure C **, ObjectC is more like a strict code for OOP in C.
 
 More repositories are built on ObjectC with object-oriented features but pure C syntax.
 
