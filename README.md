@@ -5,9 +5,9 @@
 [![license](https://img.shields.io/github/license/LingjieFan/ObjectC)](https://github.com/LingjieFan/ObjectC/blob/main/LICENSE)
 [![tag](https://img.shields.io/github/v/tag/LingjieFan/ObjectC)](https://github.com/LingjieFan/ObjectC/releases/tag)
 [![issue](https://img.shields.io/github/issues/LingjieFan/ObjectC)](https://github.com/LingjieFan/ObjectC/issues)
+![commit](https://img.shields.io/github/last-commit/LingjieFan/ObjectC)
 ![star](https://img.shields.io/github/stars/LingjieFan/ObjectC?style=social)
 ![watchers](https://img.shields.io/github/watchers/LingjieFan/ObjectC?style=social)
-![commit](https://img.shields.io/github/last-commit/LingjieFan/ObjectC)
 
 ObjectC is a C library for object-oriented programming (OOP) features. Add OOP features to C! No macro definition! No new syntax! Only C. **ObjectC is more like a coding standard for C**.
 
