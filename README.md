@@ -141,7 +141,7 @@ ObjectC also support InstanceOf() function to judge whether an object belongs to
 
 #### 3. IUnitTest Interface
 
-'IUnitTest' interface has been added into the ObjectC for unit test. Some examples for using 'IUnitTest' could be found in [test file fold](https://github.com/LingjieFan/ObjectC/tree/main/test)
+'IUnitTest' interface has been added into the ObjectC for unit test. Some examples for using 'IUnitTest' could be found in [test file folder](https://github.com/LingjieFan/ObjectC/tree/main/test)
 
 ## Contact us
 
