@@ -9,7 +9,7 @@
 ![watchers](https://img.shields.io/github/watchers/LingjieFan/ObjectC?style=social)
 ![commit](https://img.shields.io/github/last-commit/LingjieFan/ObjectC)
 
-ObjectC is a C library for object-oriented programming (OOP) features without any new features. Add OOP features to C! No macro definition! No new syntax! Only C.
+ObjectC is a C library for object-oriented programming (OOP) features. Add OOP features to C! No macro definition! No new syntax! Only C.
 
 Key features for object-oriented programming (OOP) are included:
 
