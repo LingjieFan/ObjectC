@@ -129,6 +129,6 @@ extern ArrayList* ArrayList_New(IObject* iObjectContained); // recieve interface
 
 ## Contact us
 
-Author: Lingjie Fan (A student of Fudan University)
+Author: Lingjie Fan (A student from Fudan University)
 
 Email: 20210190044@fudan.edu.cn
