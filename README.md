@@ -60,16 +60,16 @@ As you can see in the following, no new syntax is introduced into C, OOP is esta
 
 #### Single inheritance
 
-ObjectC supports single inheritance and multiple interfaces. The root of all classes is 'NULL', while the child class of 'NULL' is 'CLASS', as you can find a linked list in Class.h, Class.c, Object.h or Object.c files:
+ObjectC supports single inheritance and multiple interfaces. ObjectC binds each class with an address. The root of all classes is 'NULL', while the child class of 'NULL' is 'CLASS', as you can find a linked list in Class.h, Class.c, Object.h or Object.c files:
 
 ```C
-#define CLASS &Class_Class     // in Class.h
+#define CLASS &Class_Class     // in Class.h bind each class with an address
 
 Class Class_Class = {NULL};   // in Class.h
 ```
 
 ```C
-#define OBJECT &Object_Class   // in Object.h
+#define OBJECT &Object_Class   // in Object.h bind each class with an address
 
 Class Object_Class = {CLASS}; // in Object.c
 ```
