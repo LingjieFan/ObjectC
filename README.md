@@ -129,15 +129,15 @@ extern ArrayList* ArrayList_New(IObject* iObjectContained); // recieve interface
 
 #### Other features
 
-##### InstanceOf()
+##### 1. InstanceOf()
 
 ObjectC also support InstanceOf() function to judge whether an object belongs to a class. If it belongs to the class the function, the InstanceOf() function will return 1. Otherwise it returns 0. 
 
-##### Abstract class
+##### 2. Abstract class
 
 'Object' in ObjectC is an abstract class since 'Object' implements interface 'IObject' but doesn't implement functions in it. The Class which isn't a abstract class and inherit 'Object' should implements interface 'IObject' and these functions.
 
-#### IUnitTest Interface
+#### 3. IUnitTest Interface
 
 'IUnitTest' interface has been added into the ObjectC for unit test. Some examples for using 'IUnitTest' could be found in [test file fold](https://github.com/LingjieFan/ObjectC/tree/main/test)
 
