@@ -9,7 +9,7 @@
 ![watchers](https://img.shields.io/github/watchers/LingjieFan/ObjectC?style=social)
 ![commit](https://img.shields.io/github/last-commit/LingjieFan/ObjectC)
 
-ObjectC is a C library for object-oriented programming (OOP) features. Add OOP features to C! No macro definition! No new syntax! Only C.
+ObjectC is a C library for object-oriented programming (OOP) features. Add OOP features to C! No macro definition! No new syntax! Only C. **ObjectC is more like a coding standard for C**.
 
 Key features for object-oriented programming (OOP) are included:
 
@@ -18,7 +18,7 @@ Key features for object-oriented programming (OOP) are included:
 * Supporting function InstanceOf() to determine whether the object is the stance of a class.
 * Binding each class with a unique address, such as the root of all class is 'NULL' 0x00000000
 * the attributes of a class is private, can only be accessed with getter/setter.
-* Most important, ** No addition define macro, all syntax is pure C **, ObjectC is more like a strict code for OOP in C.
+* Most important, No addition define macro, all syntax is pure C, ObjectC is more like a coding standard for C.
 
 More repositories are built on ObjectC with object-oriented features but pure C syntax.
 
@@ -64,7 +64,7 @@ As you can see in the following, no new syntax is introduced into C, OOP is esta
 
 #### Single inheritance
 
-ObjectC supports single inheritance and multiple interfaces. ObjectC binds each class with an address. The root of all classes is 'NULL', while the child class of 'NULL' is 'CLASS', as you can find a linked list in Class.h, Class.c, Object.h or Object.c files:
+ObjectC supports single inheritance. Each class is binded with an address. The root of all classes is 'NULL', while the child class of 'NULL' is 'CLASS', as you can find a linked list in Class.h, Class.c, Object.h or Object.c files:
 
 ```C
 #define CLASS &Class_Class     // in Class.h bind each class with an address
@@ -90,10 +90,42 @@ struct _Object
 };  // in Object.c
 
 ```
-The first memeber of struct _Object must be Class* class for inheriting from 'Class'. You should keep the members and their order be the same with its parent class. More example could be find here in other repository build on ObjectC. 
+The first memeber of struct _Object must be Class* class for inheriting from 'Class'. You should keep the members and their order be the same with its parent class. More example could be find here in other repositories build on ObjectC. 
 
 #### Multiple interfaces
+ObjectC supports multiple interfaces. Interfaces 'IObject' and 'IUnitTest' are contained in ObjectC. More interfaces examples could be found in repositories build on ObjectC. Unlike class, the C structure of interface should be place in the header files:
 
+```C
+struct _IObject
+{
+    void* implementor;
+    void* (*New)(void* implementor);
+    void* (*Del)(void* implementor);
+    int (*Copy)(void* implementor, void* object);
+    int (*Equal)(void* impelementor, void* object);
+}; // in IObject.h
+``` 
+
+For Interface, the first element of C structure should be void* implementor to specify which class implements the interface. And the rest elements should be function pointers to specify the behaviors of this interface. Later, Interface could be included as attributes(elements) in class structure, such as
+
+```C
+struct _Object
+{
+    Class* class;
+    IObject* iObject;
+};
+```
+
+The class could implement the interface and expose it through a C function or it could recieve interface from other classes, such as
+
+```C
+IObject* Object_GetIObject(Object* this)
+{
+	return this->iObject;
+} // expose its interface 'iObject' through a C function
+
+extern ArrayList* ArrayList_New(IObject* iObjectContained); // recieve interface from other classes.
+```
 
 ## Contact us
 
