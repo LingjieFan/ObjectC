@@ -13,6 +13,8 @@ extern Object* Object_New(Object* this);
 
 extern Object* Object_Del(Object* this);
 
+extern IObject* Object_GetIObject(Object* this);
+
 extern int Object_Copy(Object* this, void* object);
 
 extern int Object_Equal(Object* this, void* object);
