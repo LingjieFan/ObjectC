@@ -54,6 +54,43 @@ MSCV is not recommended, since some C synatxes in C99, such as **double complex*
 
 ## Documentation
 
+### The OOP features of ObjectC
+
+As you can see in the following, no new syntax is introduced into C, OOP is estabished by using original syntax of C, like structure, function pointer, function.
+
+#### Single inheritance
+
+ObjectC supports single inheritance and multiple interfaces. The root of all classes is 'NULL', while the child class of 'NULL' is 'CLASS', as you can find a linked list in Class.h, Class.c, Object.h or Object.c files:
+
+```C
+#define CLASS &Class_Class     // in Class.h
+
+Class Class_Class = {NULL};   // in Class.h
+```
+
+```C
+#define OBJECT &Object_Class   // in Object.h
+
+Class Object_Class = {CLASS}; // in Object.c
+```
+
+which means the parent class of 'Object' is 'Class', and the parent class of 'Class' is 'NULL' or 'VOID' type in C. 
+
+Now, the inheritance chain is established in C, starting from 'NULL' to 'CLASS', next to 'OBJECT'. If you want to build some other classes with ObjectC, you can extend the inheritance chain by inherit the 'CLASS' or the 'OBJECT'. Please pay attention to make the members of the child structure in the same order of its parent class. like:
+
+```C
+struct _Object
+{
+    Class* class;
+    IObject* iObject;
+};  // in Object.c
+
+```
+The first memeber of struct _Object must be Class* class for inheriting from 'Class'. You should keep the members and their order be the same with its parent class. More example could be find here in other repository build on ObjectC. 
+
+#### Multiple interfaces
+
+
 ## Contact us
 
 Author: Lingjie Fan (A student of Fudan University)
