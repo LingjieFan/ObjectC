@@ -20,9 +20,9 @@ Key features for object-oriented programming (OOP) are included:
 * the attributes of a class is private, can only be accessed with getter/setter.
 * Most important, No addition define macro, all syntax is pure C, ObjectC is more like a coding standard for C.
 
-More repositories are built on ObjectC with object-oriented features but pure C syntax.
+More repositories are built on ObjectC with object-oriented features but pure C syntax, such as:
 
-[Container](https://github.com/LingjieFan/Container): Some Basic Data Structures: ArrayList, LinkedList, HashTable, Buffer(String) ... based on 'ObjectC'
+1. [Container: Some Basic Data Structures: ArrayList, LinkedList, HashTable, Buffer(String) ... based on 'ObjectC'](https://github.com/LingjieFan/Container)
 
 ## Installation
 
