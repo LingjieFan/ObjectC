@@ -36,7 +36,7 @@ gcc -c -fPIC Class.c -o Class.o
 gcc -c -fPIC IObject.c -o IObject.o
 gcc -c -fPIC Object.c -o Object.o
 gcc -c -fPIC IUnitTest.c -o IUnitTest.o
-gcc -shared -fPIC Basic.o Class.o IObject.o Object.o IUnitTest.o -o ObjectC.so
+gcc -shared -fPIC Basic.o Class.o IObject.o Object.o IUnitTest.o -o libObjectC.so
 ```
 
 ### Windows
