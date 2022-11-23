@@ -22,7 +22,7 @@ Key features for object-oriented programming (OOP) are included:
 
 More repositories are built on ObjectC with object-oriented features but pure C syntax, such as:
 
-1. [Container: Some Basic Data Structures: ArrayList, LinkedList, HashTable, Buffer(String) ... based on 'ObjectC'](https://github.com/LingjieFan/Container)
+1. [Container](https://github.com/LingjieFan/Container): Some Basic Data Structures: ArrayList, LinkedList, HashTable, Buffer(String) ... based on 'ObjectC'
 
 ## Installation
 
