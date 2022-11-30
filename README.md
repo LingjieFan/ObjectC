@@ -24,6 +24,8 @@ More repositories are built on ObjectC with object-oriented features but pure C 
 
 1. [Container](https://github.com/LingjieFan/Container): Some Basic Data Structures: ArrayList, LinkedList, HashTable, Buffer(String) ... based on 'ObjectC'
 
+2. [LinearC](https://github.com/LingjieFan/LinearC): A Linear library in C, a vector and matrix wrapper for blas and lapack, build on 'ObjectC'
+
 ## Installation
 
 ### Dependencies
